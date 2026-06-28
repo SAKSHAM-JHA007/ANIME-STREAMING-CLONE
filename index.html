@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIFLIX - Watch Anime Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="opening-animation" id="opening-animation" aria-hidden="true">
+        <div class="opening-logo">ANIFLIX</div>
+    </div>
+
+    <header>
+        <div class="logo">ANIFLIX</div>
+        <nav>
+            <ul>
+                <li><a href="#" id="nav-home">Home</a></li>
+                <li><a href="#" id="nav-trending">Trending</a></li>
+                <li><a href="#" id="nav-categories">Categories</a></li>
+                <li><a href="#" id="nav-mylist">My List</a></li>
+            </ul>
+        </nav>
+        <form id="search-form" class="search-bar">
+            <input id="search-input" type="text" placeholder="Search anime...">
+            <button type="submit" class="btn-secondary">Search</button>
+        </form>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Now streaming</span>
+            <h1 id="featured-title">Attack on Titan: Final Season</h1>
+            <p>The war for Paradis shifts to Marley. Eren Yeager initiates a devastating attack...</p>
+            <div class="hero-actions">
+                <button id="play-btn" class="btn-primary">▶ Play Preview</button>
+                <button id="save-btn" class="btn-secondary">+ Add to My List</button>
+            </div>
+            <div class="watch-platforms">
+                <a id="youtube-btn" class="watch-card" target="_blank" rel="noopener noreferrer">
+                    <span>Watch on YouTube</span>
+                </a>
+                <a id="aniwaves-btn" class="watch-card" target="_blank" rel="noopener noreferrer">
+                    <span>Watch on AniWaves</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="row-section">
+            <div class="section-header">
+                <div>
+                    <h2>Currently Airing</h2>
+                    <span>Fresh episodes every week</span>
+                </div>
+            </div>
+            <div class="anime-row" id="airing-row"></div>
+        </section>
+
+        <section class="row-section">
+            <div class="section-header">
+                <div>
+                    <h2>Most Popular</h2>
+                    <span>Trending across the anime world</span>
+                </div>
+            </div>
+            <div class="anime-row" id="popular-row"></div>
+        </section>
+
+        <section class="row-section">
+            <div class="section-header">
+                <div>
+                    <h2>All-Time Favorites</h2>
+                    <span>Beloved classics and fan-picked legends</span>
+                </div>
+            </div>
+            <div class="anime-row" id="favorites-row"></div>
+        </section>
+
+        <section class="row-section">
+            <div class="section-header">
+                <div>
+                    <h2>Movies & Specials</h2>
+                    <span>Epic films and standalone stories</span>
+                </div>
+            </div>
+            <div class="anime-row" id="movies-row"></div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="section-header">
+                <div>
+                    <h2>Discover More</h2>
+                    <span>Search and browse the full catalog</span>
+                </div>
+            </div>
+            <div class="anime-grid" id="anime-grid"></div>
+        </section>
+
+        <section class="episodes-section">
+            <h2 id="episode-section-title">Episodes</h2>
+            <div class="episode-grid" id="episode-grid"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
