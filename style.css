@@ -423,6 +423,30 @@ main {
     padding-left: 12px;
 }
 
+.site-footer {
+    padding: 30px 50px;
+    background: rgba(5, 5, 5, 0.94);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    color: #d0d0d0;
+}
+
+.site-footer .footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 8px;
+}
+
+.site-footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: var(--accent-2);
+}
+
 @media (max-width: 768px) {
     header {
         padding: 18px 28px;
